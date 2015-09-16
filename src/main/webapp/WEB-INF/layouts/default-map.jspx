@@ -17,43 +17,30 @@
 		<bootstrap-util:load-scripts-bootstrap />
 
 		<spring:message code="application_name" htmlEscape="false" var="app_name"/>
-		<title>
-            <spring:message arguments="${app_name}" code="welcome_h3"/>
-        </title>
+		  <title>
+        <spring:message arguments="${app_name}" code="welcome_h3"/>
+      </title>
 	</head>
 
   	<body class="tundra spring" style="padding:0px; padding-top:50px;">
-   		<!-- Fixed navbar dropdown -->
-	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
-		<div class="container">
+   	  <!-- Fixed navbar dropdown -->
+	  <header class="navbar navbar-inverse navbar-fixed-top">
+	    <div class="container">
+          <tiles:insertAttribute ignore="true" name="header" />
+		  <tiles:insertAttribute ignore="true" name="menu" />
+	    </div>
+	  </header>
 
-			<div class="navbar-header pull-right">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="icon-bar">&#160;</span> <span class="icon-bar">&#160;</span>
-					<span class="icon-bar">&#160;</span>
-				</button>
-			</div>
-			<!-- /navbar-header -->
-
-			<div class="navbar-collapse collapse">
-				<tiles:insertAttribute ignore="true" name="header" />
-				<tiles:insertAttribute ignore="true" name="menu" />
-			</div>
-			<!--/.nav-collapse -->
-
-		</div>
-		<!-- /container -->
-
-	</header>
-
-	<div class="container-fluid">
+	  <div class="container-fluid">
 		<div id="main">
 			<dialog:message-box />
 			<tiles:insertAttribute name="body" />
 		</div>
 		<!-- /main -->
-	</div>
-	<!--/.container-->
+	  </div>
+	  <!--/.container-->
+	  
+	  <!-- no footer -->
+	  
 	</body>
 </html>
