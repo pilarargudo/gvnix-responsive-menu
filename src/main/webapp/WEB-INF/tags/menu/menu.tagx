@@ -28,18 +28,20 @@
     <!-- MENU -->
     <nav class="navbar-collapse collapse gvnix-navbar-collapse">
         
-        <!-- default:
-        <ul id="${fn:escapeXml(id)}" class="nav navbar-nav pull-left"> -->      
+        <!-- default: -->
+        <ul id="${fn:escapeXml(id)}" class="nav navbar-nav">   
         
         <!-- to limit menu width: add class "overmenu" to <ul> tag
              and
              limit items to show: add to <ul> tag : data-slick='{"slidesToShow": 8, "slidesToScroll": 8}' 
         -->   
-        <ul id="${fn:escapeXml(id)}" class="nav navbar-nav pull-left overmenu" data-slick='{"slidesToShow": 7, "slidesToScroll": 7}'>
+<!--    <ul id="${fn:escapeXml(id)}" class="nav navbar-nav overmenu" data-slick='{"slidesToShow": 7, "slidesToScroll": 7}'>-->
           	<jsp:doBody />
         </ul>
-       
+               
     </nav>
+    
+    
     
 	</c:if>
 </jsp:root>

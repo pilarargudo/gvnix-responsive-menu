@@ -12,8 +12,15 @@
 			<spring:message code="menu_category_${fn:toLowerCase(fn:substringAfter(id,'_'))}_label" var="label" htmlEscape="false"/>
 		</c:if>
 
-		<li class="dropdown" id="${fn:escapeXml(id)}">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		  <!-- without SmartMenu Javascript --> 
+		  <!-- 
+		  <li class="dropdown" id="${fn:escapeXml(id)}"> 		
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown"> -->
+			
+			<!-- with SmartMenu Javascript --> 
+			
+			<li id="${fn:escapeXml(id)}">
+			<a href="#">
 				<!-- with icon -->
 				<!-- <span class="glyphicon glyphicon-picture">&#160;</span>  -->
 				<c:out value="${label}" />&#160;<b class="caret">&#160;</b>
