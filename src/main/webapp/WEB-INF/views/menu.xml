@@ -17,7 +17,7 @@
     <menu-item hidden="false" id="i_vet_list" labelCode="menu_item_vet_list_label" messageCode="global_menu_list" roles="" url="/vets?page=1&amp;size=${empty param.size ? 10 : param.size}"/>
     </menu-item>
 <menu-item id="c_pet" labelCode="menu_category_pet_label" name="Pet">
-        <menu-item hidden="false" id="i_pet_new" labelCode="menu_item_pet_new_label" messageCode="global_menu_new" roles="" url="/pets?form"/>
+    <menu-item hidden="false" id="i_pet_new" labelCode="menu_item_pet_new_label" messageCode="global_menu_new" roles="" url="/pets?form"/>
     <menu-item hidden="false" id="i_pet_list" labelCode="menu_item_pet_list_label" messageCode="global_menu_list" roles="" url="/pets?page=1&amp;size=${empty param.size ? 10 : param.size}"/>
     <menu-item hidden="false" id="fi_pet_nameandweight" labelCode="menu_item_pet_nameandweight_label" messageCode="global_menu_find" roles="" url="/pets?find=ByNameAndWeight&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}"/>
     <menu-item hidden="false" id="fi_pet_owner" labelCode="menu_item_pet_owner_label" messageCode="global_menu_find" roles="" url="/pets?find=ByOwner&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}"/>
@@ -33,5 +33,28 @@
     </menu-item>
 <menu-item id="c_monitoring_menu_category" labelCode="menu_category_monitoring_menu_category_label" name="monitoring_menu_category">
         <menu-item hidden="false" id="i_monitoring_menu_category_monitoring_menu_entry" labelCode="menu_item_monitoring_menu_category_monitoring_menu_entry_label" messageCode="global_generic" roles="" url="/monitoring"/>
-    </menu-item>
+        <!-- test -->
+		    <menu-item id="test" labelCode="test" name="test">
+		      <menu-item id="test" labelCode="test" name="test">
+            <menu-item id="test" labelCode="test" name="test" />
+            <menu-item id="test" labelCode="test" name="test" />
+            <menu-item id="test" labelCode="test" name="test" />
+            <menu-item id="test" labelCode="test" name="test" />
+            <menu-item id="test" labelCode="test" name="test">
+              <menu-item id="test" labelCode="test" name="test" />
+            </menu-item>
+          </menu-item>
+          <menu-item id="test" labelCode="test" name="test" />
+          <menu-item id="test" labelCode="test" name="test" />
+          <menu-item id="test" labelCode="test" name="test" />
+		    </menu-item>
+</menu-item>
+<!-- test -->
+<menu-item id="test" labelCode="test" name="test" />
+<menu-item id="test" labelCode="test" name="test" />
+<menu-item id="test" labelCode="test" name="test" />
+<menu-item id="test" labelCode="test" name="test" />
+<menu-item id="test" labelCode="test" name="test" />
+<menu-item id="test" labelCode="test" name="test" />
+<menu-item id="test" labelCode="test" name="test" />
 </gvnix-menu>
