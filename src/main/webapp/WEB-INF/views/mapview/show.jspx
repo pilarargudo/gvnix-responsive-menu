@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:geo="urn:jsptagdir:/WEB-INF/tags/geo" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:layer="urn:jsptagdir:/WEB-INF/tags/geo/layers" xmlns:tool="urn:jsptagdir:/WEB-INF/tags/geo/tools" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+<geo:map id="ps_com_springsource_petclinic_web_Mapview" projection="EPSG3857" z="j4vEuc4wCAAADPl/fMnOqWSG358=">
+        <geo:toc id="ps_com_springsource_petclinic_web_Mapview_toc" z="YpKTYjQzut/zC96UI52ho3hliRk=">
+            <layer:tile allowDisable="false" id="ps_com_springsource_petclinic_web_Mapview_default_layer" index="1" url="http://{s}.tile.osm.org/{z}/{x}/{y}.png?bar" z="EyT3MG53voams557j9WLIsEL9To="/>
+        <layer:entity filterType="auto" id="l_com_springsource_petclinic_domain_Owner" path="/owners" pk="id" z="nWPaEnqhLlf4IK4LpCT/Sovgspk=">
+                <layer:entity-field field="location" icon="glyphicon-home" iconColor="white" iconLibrary="glyphicon" id="l_com_springsource_petclinic_domain_Owner_location" markerColor="red" z="8RsPX+Evth/MKRvF8dgx5pyclw4="/>
+                <layer:entity-field field="distance" iconColor="white" id="l_com_springsource_petclinic_domain_Owner_distance" markerColor="green" z="R/UhSN0VNZMYFpGJNNr1CnJCtto="/>
+                <layer:entity-field field="area" iconColor="white" id="l_com_springsource_petclinic_domain_Owner_area" markerColor="red" z="tRsmDj6ImBEVhevGgqOjJO2/hvI="/>
+            </layer:entity>
+        <layer:tile id="ps_com_springsource_petclinic_web_Mapview_satellit" index="2" url="http://maptile.maps.svc.ovi.com/maptiler/maptile/newest/satellite.day/{z}/{x}/{y}/256/png8" z="hhvLnbyFpyI1zWHEYkFzeJJvBcA="/>
+        <layer:wms crs="EPSG4326" format="image/png" id="ps_com_springsource_petclinic_web_Mapview_geological_map_of_valencia" index="3" layers="0,1,2,3" transparent="true" url="http://mapas.igme.es/gis/services/Cartografia_Geologica/IGME_GeologicoCValenciana_400/MapServer/WMSServer" version="1.1.1" z="yFT8C/yt0q7npyr2Bf70dP4yNAE="/>
+        </geo:toc>
+        <geo:toolbar id="ps_com_springsource_petclinic_web_Mapview_toolbar" z="M08eqz3oB26Dz4Gz9Fo5Zy2W8Tc=">
+            <tool:measure id="ps_com_springsource_petclinic_web_Mapview_measure" z="GDFVN/pXPdwTe/wwCFUCuX73QDA="/>
+        <tool:custom actionTool="false" activateFunction="activateLatLngTool" deactivateFunction="deactivateLatLngTool" icon="fa-location-arrow" iconLibrary="fa" id="ps_com_springsource_petclinic_web_Mapview_latlng" z="71RWTHLr6dLF5yZsiphw5u1NX0E="/>
+        </geo:toolbar>
+    </geo:map>
+</div>
