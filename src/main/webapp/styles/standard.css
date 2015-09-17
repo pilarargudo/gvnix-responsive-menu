@@ -206,6 +206,11 @@ color: #acc47f;
   .gvnix-navbar-collapse{
   margin: 0;
   padding: 15px 0;
+  clear: both;
+  }
+  .navbar-header{
+    float: left;
+    width: 85%;
   }
 }
 

@@ -26,8 +26,8 @@
    	  <!-- Fixed navbar dropdown -->
 	  <header class="navbar navbar-inverse navbar-fixed-top">
 	    <div class="container">
-          <tiles:insertAttribute ignore="true" name="header" />
-		  <tiles:insertAttribute ignore="true" name="menu" />
+        <tiles:insertAttribute ignore="true" name="header" />
+		    <tiles:insertAttribute ignore="true" name="menu" />
 	    </div>
 	  </header>
 
