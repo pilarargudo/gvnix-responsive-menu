@@ -132,10 +132,6 @@
     <script src="${js_jquery_datatables_advancedfilter_url}" type="text/javascript">
         <!--required for FF3 and Opera-->
     </script>
-<!-- Menu -->    
-<!-- <spring:url value="/resources/styles/menu/dropdown-submenu.css" var="css_bootstrap_menu_url"/>
-    <link href="${css_bootstrap_menu_url}" media="screen" rel="stylesheet" type="text/css"/> -->
-
 <!-- SmartMenus jQuery plugin -->
 <spring:url value="/resources/scripts/menu/jquery.smartmenus.js" var="smartmenus_js"/>
     <script src="${smartmenus_js}" type="text/javascript">
