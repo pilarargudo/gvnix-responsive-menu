@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Init slick for overmenu & mediaqueries conditional
 
 $(document).ready(function(){
@@ -47,17 +46,3 @@ $(window).resize();
 //});
 //
 //$(window).resize();
-=======
-// Init slick for overmenu
-
-$(document).ready(function(){
-	  $('.overmenu').slick({
-		  infinite: false,
-		  speed: 300,
-		  variableWidth: true,		  
-		  });
-	});
-
-
-
->>>>>>> branch 'master' of https://github.com/pilarargudo/gvnix-responsive-menu
