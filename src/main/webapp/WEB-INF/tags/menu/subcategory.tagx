@@ -22,7 +22,8 @@
 			<a href="#">
 				<!-- with icon -->
 				<!-- <span class="glyphicon glyphicon-picture">&#160;</span>  -->
-				<c:out value="${label}" /> &#160;<b class="caret">&#160;</b>
+				<c:out value="${label}" />
+				<span class="caret"></span>
 			</a>
 
 			<!-- navbar dropdown -->
