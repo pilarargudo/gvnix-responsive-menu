@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
     var width = $(window).width();
-    if( width >= 959 ){
+    if( width >= 768 ){
         // code for desktop view
     	
     	//init Slick
@@ -21,7 +21,23 @@ $(document).ready(function(){
 });
 
 $(window).resize(function() {
-        var width = $(window).width();
+	 var width = $(window).width();
+	    if( width >= 768 ){
+	        // code for desktop view
+	    	
+	    	//init Slick
+	  	  	$('.overmenu').slick({
+			  infinite: false,
+			  speed: 300,
+			  variableWidth: true,		  
+			  });
+	  	  	
+	  	  	//overwrite styles Smartmenu + Slick
+	    	if ( $( 'ul.navbar-nav' ).hasClass( "overmenu" ) ) {
+	    	      $('.sm ul').addClass('smartmenu-slick');
+	    	};
+	    
+	    } 	
         
         
 });
