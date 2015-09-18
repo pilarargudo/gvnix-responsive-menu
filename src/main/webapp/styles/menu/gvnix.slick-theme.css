@@ -16,18 +16,30 @@
   }
   
     .slick-list{
-        height: 1024px; /*tbc improved*/
-        overflow-y: visible;
+        height: 200px; /*tbc improved*/
+        /* overflow-y: visible; */
         border: 1px solid red;
-         margin-left: 15px;
+        margin-left: 15px;
     }
-    .smartmenu-slick{
-      border: 1px solid yellow;
+/*improved classes Slick with Smartmenu dropdown*/
+    /*only for second level*/
+    li.slick-slide >a.has-submenu + ul.smartmenu-slick {
+      border: 1px solid red;
       margin-left: 0 !important;
       margin-top: 0 !important;
       
+      z-index: 1000;
+      position: relative;
+      display: block !important;
     }
-    
+    /*third level*/
+    li.slick-slide >a.has-submenu + ul.smartmenu-slick > li >a.has-submenu + ul.smartmenu-slick {
+    border: 1px solid purple;
+    z-index: 1000;
+    position: relative;
+    display: block !important;
+    }
+   
     .slick-list li:focus{
       outline: none;
     }
