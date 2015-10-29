@@ -6,22 +6,22 @@
 	<jsp:directive.attribute name="z" type="java.lang.String" required="false" description="Used for checking if element has been modified (to recalculate simply provide empty string value)"/>
 
 	<c:if test="${empty render or render}">
-	
+
     <nav class="navbar-collapse collapse gvnix-navbar-collapse">
-        
+
         <!-- default: -->
         <!-- <ul id="${fn:escapeXml(id)}" class="nav navbar-nav"> -->
-        
+
         <!-- to limit menu width: add class "overmenu" to <ul> tag
              and
-             limit items to show: add to <ul> tag : data-slick='{"slidesToShow": 8, "slidesToScroll": 8}' 
+             limit items to show: add to <ul> tag : data-slick='{"slidesToShow": 8, "slidesToScroll": 8}'
              will be visible on tablet and desktop resolutions
-        -->   
+        -->
         <ul id="${fn:escapeXml(id)}" class="nav navbar-nav overmenu" data-slick='{"slidesToShow": 7, "slidesToScroll": 7}'>
           	<jsp:doBody />
         </ul>
-               
+
     </nav>
-    
+
 	</c:if>
 </jsp:root>

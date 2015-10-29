@@ -2,50 +2,39 @@
  * Overmenu custom
  *
  */
- 
+
 @media (min-width: 767px){
-  
+
 /* all in menu no collapse */
-  
-  .overmenu{ 
+
+  .overmenu{
   height: 50px;
-  border: 1px solid red;
   }
   .slick-track{
       height: 50px;
   }
-  
+
     .slick-list{
-        height: 200px; /*tbc improved*/
-        /* overflow-y: visible; */
-        border: 1px solid red;
-        margin-left: 15px;
+        height: 1024px; /*tbc improved*/
+        overflow-y: visible;
+         margin-left: 15px;
     }
 /*improved classes Slick with Smartmenu dropdown*/
+
     /*only for second level*/
     li.slick-slide >a.has-submenu + ul.smartmenu-slick {
-      border: 1px solid red;
       margin-left: 0 !important;
       margin-top: 0 !important;
-      
-      z-index: 1000;
-      position: relative;
-      display: block !important;
     }
     /*third level*/
-    li.slick-slide >a.has-submenu + ul.smartmenu-slick > li >a.has-submenu + ul.smartmenu-slick {
-    border: 1px solid purple;
-    z-index: 1000;
-    position: relative;
-    display: block !important;
-    }
-   
+    li.slick-slide >a.has-submenu + ul.smartmenu-slick > li >a.has-submenu + ul.smartmenu-slick {}
+
     .slick-list li:focus{
       outline: none;
     }
-    
+
     /* slide controls */
-    
+
     .slick-slider {
         margin-bottom: 0;
     }
@@ -55,24 +44,24 @@
     {
         opacity: 0;
     }
-}  
+}
 @media (min-width: 768px) and (max-width: 978px){
-  .overmenu{ 
-  width: 500px; 
-  }  
+  .overmenu{
+  width: 500px;
+  }
 }
 
 @media (min-width: 979px){
-  .overmenu{ 
-  width: 700px; 
+  .overmenu{
+  width: 700px;
   }
 }
 
 @media (min-width: 1040px){
-  .overmenu{ 
-  width: 900px; 
+  .overmenu{
+  width: 900px;
   }
-}   
+}
 
 
 /*
@@ -82,8 +71,8 @@
      *
      * Custom by DISID
      */
-     
-    
+
+
     .navbar-inverse .navbar-nav > div.slick-list > div.slick-track > li > a {
       color: #cdbfe3;
     }
@@ -95,7 +84,7 @@
       color: #fff;
       background-color: #463265;
     }
-    .navbar-inverse .navbar-nav>div.slick-list>div.slick-track>.open>a, 
+    .navbar-inverse .navbar-nav>div.slick-list>div.slick-track>.open>a,
     .navbar-inverse .navbar-nav>div.slick-list>div.slick-track>.open>a:hover,
     .navbar-inverse .navbar-nav>div.slick-list>div.slick-track>.open>a:focus,
     .navbar .navbar-nav > div.slick-list > div.slick-track > .active > a,
@@ -106,17 +95,17 @@
     .navbar-inverse .navbar-nav > div.slick-list > div.slick-track > li > a {
     color: #acc47f;
     }
-    
+
     .navbar-inverse .navbar-nav>div.slick-list>div.slick-track>.dropdown>a .caret {
         border-top-color: #999;
         border-bottom-color: #999;
     }
-    .navbar-inverse .navbar-nav>div.slick-list>div.slick-track>.open>a .caret, 
+    .navbar-inverse .navbar-nav>div.slick-list>div.slick-track>.open>a .caret,
     .navbar-inverse .navbar-nav>div.slick-list>div.slick-track>.dropdown>a:hover .caret {
         border-top-color: #fff;
         border-bottom-color: #fff;
-    } 
-   
+    }
+
    .navbar-inverse .navbar-nav > div.slick-list > div.slick-track > li > a {
         color: #acc47f;
         text-decoration: none;
