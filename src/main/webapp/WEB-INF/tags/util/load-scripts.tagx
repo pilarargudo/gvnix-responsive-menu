@@ -162,7 +162,7 @@
   <link href="${gvnix_slick_theme_css_url}" media="screen" rel="stylesheet" type="text/css"/>
 
 <!-- slick for overmenu -->
-  <spring:url value="/resources/scripts/slick/slick.min.js" var="slick_js_url" />
+  <spring:url value="/resources/scripts/slick/slick.js" var="slick_js_url" />
   <script src="${slick_js_url}" type="text/javascript">
     <!--required for FF3 and Opera -->
     </script>
