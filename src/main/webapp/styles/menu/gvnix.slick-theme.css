@@ -9,6 +9,7 @@
 
   .overmenu{
   height: 50px;
+  border: 1px solid red;
   }
   .slick-track{
       height: 50px;
@@ -16,16 +17,17 @@
 
     .slick-list{
         height: 1024px; /*tbc improved*/
-        overflow-y: visible;
-         margin-left: 15px;
+        margin-left: 15px;
+        border: 1px solid black;
     }
-/*improved classes Slick with Smartmenu dropdown*/
 
+/*improved classes Slick with Smartmenu dropdown*/
     /*only for second level*/
     li.slick-slide >a.has-submenu + ul.smartmenu-slick {
       margin-left: 0 !important;
       margin-top: 0 !important;
     }
+
     /*third level*/
     li.slick-slide >a.has-submenu + ul.smartmenu-slick > li >a.has-submenu + ul.smartmenu-slick {}
 
@@ -47,13 +49,13 @@
 }
 @media (min-width: 768px) and (max-width: 978px){
   .overmenu{
-  width: 500px;
+  width: 490px;
   }
 }
 
 @media (min-width: 979px){
   .overmenu{
-  width: 700px;
+  width: 690px;
   }
 }
 

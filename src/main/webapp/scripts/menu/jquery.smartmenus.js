@@ -720,7 +720,7 @@
 					itemY = itemOffset.top,
 					itemW = this.getWidth($a),
 					itemH = this.getHeight($a),
-					$win = $(window),
+					$win = $('.overmenu'), // modified by DISID (window)
 					winX = $win.scrollLeft(),
 					winY = $win.scrollTop(),
 					winW = this.getViewportWidth(),
@@ -1133,7 +1133,7 @@
 				if (!('onorientationchange' in window) || e.type == 'orientationchange') {
 					var isCollapsible = this.isCollapsible();
 					// if it was collapsible before resize and still is, don't do it
-					if (!(this.wasCollapsible && isCollapsible)) { 
+					if (!(this.wasCollapsible && isCollapsible)) {
 						if (this.activatedItems.length) {
 							this.activatedItems[this.activatedItems.length - 1][0].blur();
 						}
