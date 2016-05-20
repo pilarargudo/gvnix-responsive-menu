@@ -9,7 +9,6 @@
 
   .overmenu{
   height: 50px;
-  border: 1px solid red;
   }
   .slick-track{
       height: 50px;
@@ -18,7 +17,6 @@
     .slick-list{
         height: 1024px; /*tbc improved*/
         margin-left: 15px;
-        border: 1px solid black;
     }
 
 /*improved classes Slick with Smartmenu dropdown*/

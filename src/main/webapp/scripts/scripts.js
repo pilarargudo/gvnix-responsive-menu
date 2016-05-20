@@ -51,7 +51,7 @@ $(document).ready(function() {
 
     $('li.slick-slide > a.has-submenu').mouseover(function() { // a.dropdown-toggle without Smartmenu plugin
 
-    	$('ul.dropdown-menu.smartmenu-slick').css('border','1px solid red');
+//    	$('ul.dropdown-menu.smartmenu-slick').css('border','1px solid red');
 
     	//$('ul.dropdown-menu.smartmenu-slick').addClass('pull-right');
 
